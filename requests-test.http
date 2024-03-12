@@ -1,0 +1,9 @@
+POST http://127.0.0.1:8080/transcript
+Content-Type: application/x-www-form-urlencoded
+
+course=INFO+2300&term=108&year=4&grade=A&request-insert=
+###
+POST http://127.0.0.1:8080/flowershop
+Content-Type: application/x-www-form-urlencoded
+
+name=2300+Cafe&phone=607-555-5555&bouquet=daisies&request-sample=
