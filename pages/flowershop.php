@@ -75,8 +75,8 @@ if (isset($_POST["request-sample"])) {
     $feedback_css_classes["phone"] = "";
   }
 
-  // TODO: Bouquet is required; check bouquet type -- only 3 types are valid
-  if ($form_values["bouquet"] == "") {
+  // Bouquet is required; check bouquet type -- only 3 types are valid
+  if (!in_array($form_values["bouquet"], array("roses", "daises", "gardenias"))) {
     // no bouquet provided, it"s required!
     // form is not valid
     $form_valid = false;

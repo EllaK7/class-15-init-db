@@ -73,7 +73,7 @@ const GRADES = array(
 require "includes/db.php";
 
 // open database
-$db = open_sqlite_db("secure/site.sqlite");
+$db = init_sqlite_db("db/site.sqlite", "db/init.sql");
 
 // Did the user submit the form?
 if (isset($_POST["request-insert"])) {

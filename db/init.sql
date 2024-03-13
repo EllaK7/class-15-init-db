@@ -24,4 +24,14 @@ VALUES
 
 --- Transcript Grades ---
 /* TODO: Create a grades table */
+CREATE TABLE grades(
+  id INTEGER NOT NULL UNIQUE,
+  class_num TEXT NOT NULL,
+  term INTEGER NOT NULL,
+  acad_year INTEGER NOT NULL,
+  grade TEXT,
+  PRIMARY KEY(id AUTOINCREMENT)
+);
+
 /* TODO: grades seed data */
+INSERT INTO grades(class_num, term, acad_year, grade) VALUES ('INFO 2300', 108, 1, NULL);

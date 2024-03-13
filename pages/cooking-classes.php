@@ -65,7 +65,7 @@ if (isset($_POST["request"])) {
   }
 
   // Email is required; is the email format correct (does not validate if email exists)
-  if ($form_values["email"] == "") {
+  if (!filter_var($form_values["email"], FILTER_VALIDATE_EMAIL)) {
     // no email provided, it's required!
     // form is not valid
     $form_valid = false;
